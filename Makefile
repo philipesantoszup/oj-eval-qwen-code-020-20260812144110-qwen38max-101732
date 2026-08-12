@@ -1,5 +1,6 @@
 CC = gcc
-CFLAGS = -O2 -std=gnu11
+CFLAGS = -O2 -std=gnu11 -Wno-error=int-conversion \
+         -Wno-error=implicit-function-declaration -Wno-error=implicit-int
 
 .PHONY: all clean
 
